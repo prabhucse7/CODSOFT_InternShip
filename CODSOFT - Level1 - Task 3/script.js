@@ -1,16 +1,19 @@
 "use strict";
 
+///////////////Elements------------------------------------------------------
 const display = document.getElementById("display");
 let input = "";
 let operator = "";
 let previousInput = "";
 let operationString = "";
 
-const updateDisplay = (value) => {
+///////////////Updating Display------------------------------------------------------
+const updateDisplay = function (value) {
   display.textContent = value;
   display.scrollLeft = display.scrollWidth;
 };
 
+///////////////clearing Calculator------------------------------------------------------
 const clearCalculator = () => {
   input = "";
   previousInput = "";
@@ -19,14 +22,16 @@ const clearCalculator = () => {
   updateDisplay("0");
 };
 
-const appendNumber = (number) => {
+///////////////giving Numbers------------------------------------------------------
+const appendNumber = function (number) {
   if (input.includes(".") && number === ".") return;
   input += number;
   operationString += number;
   updateDisplay(operationString);
 };
 
-const chooseOperator = (op) => {
+///////////////Operations------------------------------------------------------
+const chooseOperator = function (op) {
   if (input === "") return;
   if (previousInput !== "") {
     calculate();
@@ -38,7 +43,8 @@ const chooseOperator = (op) => {
   updateDisplay(operationString);
 };
 
-const calculate = () => {
+///////////////Calculations------------------------------------------------------
+const calculate = function () {
   let result;
   const prev = parseFloat(previousInput);
   const current = parseFloat(input);
@@ -66,8 +72,9 @@ const calculate = () => {
   updateDisplay(input);
 };
 
+///////////////Handlers------------------------------------------------------
 document.querySelectorAll(".btn").forEach((button) => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", function () {
     const key = button.getAttribute("data-key");
     if (!isNaN(key) || key === ".") {
       appendNumber(key);
