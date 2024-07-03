@@ -9,6 +9,16 @@
   background-color: #222;
 }
 
+/* .sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  z-index: 999;
+  background-color: #111;
+} */
+
 .nav-list {
   list-style: none;
   display: flex;
