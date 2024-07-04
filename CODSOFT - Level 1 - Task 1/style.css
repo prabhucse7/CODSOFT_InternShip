@@ -9,15 +9,20 @@
   background-color: #222;
 }
 
-/* .sticky {
+/* Sticky Navigation */
+.sticky .header {
   position: fixed;
   top: 0;
   bottom: 0;
   width: 100%;
+  height: 9.2rem;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  z-index: 999;
-  background-color: #111;
-} */
+  background-color: rgba(1, 1, 1, 0.95);
+}
+
+.sticky .about-section {
+  margin-top: 9.6rem;
+}
 
 /* Navigation--------------------------------------------- */
 .name-logo {
@@ -199,9 +204,11 @@
   font-size: 3.6rem;
   text-decoration: none;
   color: #4dabf7;
+  transition: all 0.3s;
 }
 
 .other:hover {
+  font-size: 3.8rem;
   color: #ebebeb;
 }
 
