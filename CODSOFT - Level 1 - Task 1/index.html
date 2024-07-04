@@ -20,102 +20,156 @@
   </head>
   <body>
     <header class="header">
+      <!-- Name and Logo -->
       <a href="#" class="name-logo">Prabhu M P</a>
+      <!-- Navigation Bar -->
       <nav class="navigation">
         <ul class="nav-list">
           <li><a href="#about" class="nav-link">About Me</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#" class="nav-link">Projects</a></li>
-          <li><a href="#" class="nav-link contact-link">Contact</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#" class="contact-link">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about-section grid grid-2-cols" id="about">
-        <div class="text-box">
-          <h1 class="heading">
-            Prabhu M P
-            <p class="designation">Software Developer</p>
-          </h1>
-          <p class="about-text">
-            I seek challenging and rewarding opportunities in the field of
-            computer science where I can utilize my skills and knowledge to make
-            a positive impact. I’m passionate about Software Development and I
-            have expertise in creative thinking, leadership, communication and
-            time management.
-          </p>
-          <div class="btn-download">
-            <i class="ph ph-download-simple download-icon"></i>
-            <a
-              href="Resume-Single-sheet.pdf"
-              download="Prabhu-Resume.pdf"
-              class="download-resume-link"
-              >Download CV</a
-            >
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <!-- Blob Designs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <!-- container and contents -->
+        <div class="grid grid-2-cols high-index">
+          <div class="text-box">
+            <h1 class="heading">
+              Prabhu M P
+              <p class="designation">Software Developer</p>
+            </h1>
+            <p class="about-text">
+              I seek challenging and rewarding opportunities in the field of
+              computer science where I can utilize my skills and knowledge to
+              make a positive impact. I’m passionate about Software Development
+              and I have expertise in creative thinking, leadership,
+              communication and time management.
+            </p>
+            <div class="link-contents">
+              <div class="btn-download">
+                <i class="ph ph-download-simple download-icon"></i>
+                <a
+                  href="Resume-Single-sheet.pdf"
+                  download="Prabhu-Resume.pdf"
+                  class="download-resume-link"
+                  >Download CV</a
+                >
+              </div>
+              <a
+                href="https://github.com/Mpprabhu?tab=overview&from=2024-07-01&to=2024-07-04"
+                class="other"
+                ><i class="ph ph-github-logo"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/prabhu-m-p/" class="other"
+                ><i class="ph ph-linkedin-logo"></i
+              ></a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img
+              src="img/profilexRemoveBG.png"
+              alt="profile"
+              class="profile-img"
+            />
           </div>
         </div>
-        <div class="image-box">
-          <img
-            src="img/profilexRemoveBG.png"
-            alt="profile"
-            class="profile-img"
-          />
-        </div>
       </section>
+      <!-- Container -->
       <div class="container">
+        <!-- Skills Section -->
         <section class="skills-section" id="skills">
           <p class="subheading">SKILLS</p>
-          <h2 class="second-heading">Domains that I have Experience</h2>
+          <h2 class="second-heading">
+            Areas of Software Development Expertise
+          </h2>
+          <!-- Skills Content -->
           <div class="grid grid-3-cols">
+            <!-- skill-1 -->
             <div class="skill-1 skill">
-              <img
-                src="img/design.png"
-                alt="UI/UX Designer"
-                class="skill-image skill-image-1"
-              />
+              <div class="skill-image-box">
+                <img
+                  src="img/design.png"
+                  alt="UI/UX Designer"
+                  class="skill-image skill-image-1"
+                />
+              </div>
               <div class="skill-content">
                 <p class="skill-title">
                   <strong>UI/UX Designer</strong>
                 </p>
                 <p class="skill-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Natus similique adipisci praesentium.
+                  I have experience in UI/UX design, where I've applied design
+                  principles to create intuitive and engaging user interfaces
                 </p>
               </div>
             </div>
+            <!-- skill-2 -->
             <div class="skill-2 skill">
-              <img
-                src="img/game.png"
-                alt="UI/UX Designer"
-                class="skill-image skill-image-2"
-              />
+              <div class="skill-image-box">
+                <img
+                  src="img/web.png"
+                  alt="web-developer"
+                  class="skill-image skill-image-2"
+                />
+              </div>
               <div class="skill-content">
                 <p class="skill-title">
                   <strong>Web Developer</strong>
                 </p>
                 <p class="skill-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Natus similique adipisci praesentium.
+                  I have experience developing and maintaining responsive,
+                  dynamic websites using modern web technologies
                 </p>
               </div>
             </div>
+            <!-- skill-3 -->
             <div class="skill-3 skill">
-              <img
-                src="img/web.png"
-                alt="UI/UX Designer"
-                class="skill-image skill-image-3"
-              />
+              <div class="skill-image-box">
+                <img
+                  src="img/game.png"
+                  alt="UI/UX Designer"
+                  class="skill-image skill-image-3"
+                />
+              </div>
               <div class="skill-content">
                 <p class="skill-title">
                   <strong>Game Developer</strong>
                 </p>
                 <p class="skill-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Natus similique adipisci praesentium.
+                  I have experience developing engaging and interactive games
+                  and mechanisms using Unity and game physics.
                 </p>
               </div>
             </div>
           </div>
+        </section>
+        <!-- Tech Set Section -->
+        <section class="tech-set">
+          <p class="tech-text">Softwares</p>
+          <div class="tech-img-box">
+            <img src="img/icons8-figma-48.png" alt="figma" class="tech" /><img
+              src="img/icons8-html-5-48.png"
+              alt="html"
+              class="tech"
+            /><img src="img/icons8-css-48.png" alt="css" class="tech" /><img
+              src="img/icons8-javascript-48.png"
+              alt="js"
+              class="tech"
+            /><img src="img/icons8-java-48.png" alt="" class="tech" />
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <p class="subheading text-center">projects</p>
+          <h2 class="second-heading text-center">
+            My Software Projects on various Domains
+          </h2>
         </section>
       </div>
     </main>
