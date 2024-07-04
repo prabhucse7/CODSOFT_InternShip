@@ -86,3 +86,12 @@ section {
   z-index: 0;
   opacity: 10%;
 }
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateX(8rem);
+}
