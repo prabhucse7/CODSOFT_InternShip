@@ -75,16 +75,18 @@ section {
   margin: 0 auto;
 }
 
-/* Other Designs */
-.high-index {
-  position: relative;
-  z-index: 999;
+.grid-center {
+  align-items: center;
 }
 
-.blob {
-  position: absolute;
-  z-index: 0;
-  opacity: 10%;
+.row-gap {
+  row-gap: 8rem;
+}
+.third-heading {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #ebebeb;
 }
 
 .section {
@@ -94,4 +96,8 @@ section {
 .section-hidden {
   opacity: 0;
   transform: translateX(8rem);
+}
+
+.margin-top-correction {
+  margin-top: 1.6rem;
 }
