@@ -65,6 +65,9 @@ section {
   column-gap: 10rem;
 }
 
+.grid-full-scale {
+  grid-column: 1/-1;
+}
 .text-center {
   text-align: center;
 }
